@@ -20,6 +20,7 @@
   <PropertyGroup>
     <PackageTags>Limbo, Skybrud, Forms</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://packages.limbo.works/limbo.forms/v1/</PackageProjectUrl>
     <PackageIcon>Limbo.png</PackageIcon>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/limbo-works/Limbo.Forms</RepositoryUrl>
