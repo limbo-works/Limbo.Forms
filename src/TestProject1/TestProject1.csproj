@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Skybrud.Forms\Skybrud.Forms.csproj" />
+    <ProjectReference Include="..\Limbo.Forms\Limbo.Forms.csproj" />
   </ItemGroup>
 
 </Project>

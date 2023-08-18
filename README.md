@@ -1,6 +1,6 @@
-# Skybrud.Forms
+# Limbo Forms
 
-*Skybrud.Forms* is a .NET package with various models for describing forms and form fields in a web based context.
+*Limbo.Forms* is a .NET package with various models for describing forms and form fields in a web based context.
 
 
 
@@ -16,16 +16,16 @@ At [**@limbo-works**](https://github.com/limbo-works), we're typically building 
 
 ## Installation
 
-The package is only available via [NuGet](https://www.nuget.org/packages/Skybrud.Forms/1.0.0-beta008) - you can install the package in your project using either the .NET CLI:
+The package is only available via [NuGet](https://www.nuget.org/packages/Limbo.Forms/1.0.0) - you can install the package in your project using either the .NET CLI:
 
 ```
-dotnet add package Skybrud.Forms --version 1.0.0-beta010
+dotnet add package Limbo.Forms --version 1.0.0
 ```
 
 or the NuGet Package Manager:
 
 ```
-Install-Package Skybrud.Forms -Version 1.0.0-beta010
+Install-Package Limbo.Forms -Version 1.0.0
 ```
 
 
