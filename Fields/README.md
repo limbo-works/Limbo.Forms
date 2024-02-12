@@ -6,28 +6,28 @@ order: 2
 
 ## Buttons
 
-- [`Button`](./Buttons/Button.md)
-- [`ResetButton`](./Buttons/ResetButton.md)
-- [`SubmitButton`](./Buttons/SubmitButton.md)
+- [`Button`](./buttons/button.md)
+- [`ResetButton`](./buttons/resetbutton.md)
+- [`SubmitButton`](./buttons/submitbutton.md)
 
 ## Checkboxes
 
-- [`Checkbox`](./Checkboxes/Checkbox.md)
-- [`CheckboxList`](./Checkboxes/CheckboxList.md)
+- [`Checkbox`](./checkboxes/checkbox.md)
+- [`CheckboxList`](./checkboxes/checkboxlist.md)
 
 ## Dropdowns
 
-- [`DropDownList`](./Dropdowns/DropDownList.md)
+- [`DropDownList`](./dropdowns/dropdownlist.md)
 
 ## Radio Groups
 
-- [`RadioList`](./RadioGroups/RadioList.md)
+- [`RadioList`](./radiogroups/radiolist.md)
 
 ## Other
 
-- [`EmailField`](./Other/EmailField.md)
-- [`HiddenField`](./Other/HiddenField.md)
-- [`NumberField`](./Other/InputField.md)
-- [`TelField`](./Other/TelField.md)
-- [`TextArea`](./Other/TextArea.md)
-- [`TextField`](./Other/TextField.md)
+- [`EmailField`](./other/emailfield.md)
+- [`HiddenField`](./other/hiddenfield.md)
+- [`NumberField`](./other/inputfield.md)
+- [`TelField`](./other/telfield.md)
+- [`TextArea`](./other/textarea.md)
+- [`TextField`](./other/textfield.md)

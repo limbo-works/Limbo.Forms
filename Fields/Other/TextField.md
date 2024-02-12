@@ -7,7 +7,7 @@
     </tr>
     <tr>
         <th>Namespace</th>
-        <td><code>Skybrud.Forms.Models.Fields</code></td>
+        <td><code>Limbo.Forms.Models.Fields</code></td>
     </tr>
     <tr>
         <th>Type</th>

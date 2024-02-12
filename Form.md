@@ -11,7 +11,7 @@ order: 1
     </tr>
     <tr>
         <th>Namespace</th>
-        <td><code>Skybrud.Forms.Models</code></td>
+        <td><code>Limbo.Forms.Models</code></td>
     </tr>
 </table>
 
@@ -65,8 +65,8 @@ The class has the following properties:
 A new instance of the `Form` class can be initialized like in the example below:
 
 ```csharp
-@using Skybrud.Forms.Models
-@using Skybrud.Forms.Models.Fields
+@using Limbo.Forms.Models
+@using Limbo.Forms.Models.Fields
 @{
 
     // Initialize a new form
