@@ -4,6 +4,6 @@ redirect: ./form/
 
 # Documentation
 
-Skybrud.Essentials focuses on a few different areas within .NET. You can find more information under each of the areas listed below:
+**Limbo.Forms** contains a number of models for describing forms and form fields. You can read more about this on the page listed below:
 
 {{overview}}
