@@ -1,5 +1,5 @@
 # Buttons
 
-- [`Button`](./Button.md)
-- [`ResetButton`](./ResetButton.md)
-- [`SubmitButton`](./SubmitButton.md)
+- [`Button`](./button.md)
+- [`ResetButton`](./resetbutton.md)
+- [`SubmitButton`](./submitbutton.md)

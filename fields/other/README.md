@@ -4,10 +4,10 @@ order: 99
 
 # Other
 
-- [`EmailField`](./EmailField.md)
-- [`HiddenField`](./HiddenField.md)
-- [`InputField`](./InputField.md)
-- [`NumberField`](./NumberField.md)
-- [`TelField`](./TelField.md)
-- [`TextArea`](./TextArea.md)
-- [`TextField`](./TextField.md)
+- [`EmailField`](./emailfield.md)
+- [`HiddenField`](./hiddenfield.md)
+- [`InputField`](./inputfield.md)
+- [`NumberField`](./numberfield.md)
+- [`TelField`](./telfield.md)
+- [`TextArea`](./textarea.md)
+- [`TextField`](./textfield.md)

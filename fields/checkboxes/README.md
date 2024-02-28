@@ -1,4 +1,4 @@
 # Checkboxes
 
-- [`Checkbox`](./Checkbox.md)
-- [`CheckboxList`](./CheckboxList.md)
+- [`Checkbox`](./checkbox.md)
+- [`CheckboxList`](./checkboxlist.md)

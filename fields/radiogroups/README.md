@@ -1,3 +1,3 @@
 # Radio Groups
 
-- [`RadioList`](./RadioList.md)
+- [`RadioList`](./radiolist.md)
