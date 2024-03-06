@@ -1,18 +1,16 @@
 ﻿using Limbo.Forms.Models.Fields;
 
-namespace TestProject1 {
+namespace TestProject1;
 
-    [TestClass]
-    public class DateFieldTests {
+[TestClass]
+public class DateFieldTests {
 
-        [TestMethod]
-        public void ValidateType() {
+    [TestMethod]
+    public void ValidateType() {
 
-            var field = new DateField();
+        var field = new DateField();
 
-            Assert.AreEqual("date", field.Type);
-
-        }
+        Assert.AreEqual("date", field.Type);
 
     }
 

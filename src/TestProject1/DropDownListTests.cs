@@ -2,21 +2,21 @@ using Limbo.Forms.Models;
 using Limbo.Forms.Models.Fields;
 using Newtonsoft.Json;
 
-namespace TestProject1 {
+namespace TestProject1;
 
-    [TestClass]
-    public class DropDownListTests {
+[TestClass]
+public class DropDownListTests {
 
-        [TestMethod]
-        public void SetPlaceholder() {
+    [TestMethod]
+    public void SetPlaceholder() {
 
-            var form = new Form();
+        var form = new Form();
 
-            var ddl = new DropDownList("hello")
-                .SetPlaceholder("Hello")
-                .AppendTo(form);
+        var ddl = new DropDownList("hello")
+            .SetPlaceholder("Hello")
+            .AppendTo(form);
 
-            const string expected1 = """
+        const string expected1 = """
                                      {
                                        "fields": [
                                          {
@@ -28,13 +28,13 @@ namespace TestProject1 {
                                        ]
                                      }
                                      """;
-            string actual1 = JsonConvert.SerializeObject(form, Formatting.Indented);
+        string actual1 = JsonConvert.SerializeObject(form, Formatting.Indented);
 
-            Assert.AreEqual(expected1, actual1, "#1");
+        Assert.AreEqual(expected1, actual1, "#1");
 
-            ddl.SetPlaceholder(null);
+        ddl.SetPlaceholder(null);
 
-            const string expected2 = """
+        const string expected2 = """
                                      {
                                        "fields": [
                                          {
@@ -46,11 +46,9 @@ namespace TestProject1 {
                                      }
                                      """;
 
-            string actual2 = JsonConvert.SerializeObject(form, Formatting.Indented);
+        string actual2 = JsonConvert.SerializeObject(form, Formatting.Indented);
 
-            Assert.AreEqual(expected2, actual2, "#2");
-
-        }
+        Assert.AreEqual(expected2, actual2, "#2");
 
     }
 
