@@ -12,6 +12,19 @@ namespace Limbo.Forms.Models {
     public static partial class FormExtensions {
 
         /// <summary>
+        /// Sets the name of <paramref name="form"/>.
+        /// </summary>
+        /// <typeparam name="T">The type of the form.</typeparam>
+        /// <param name="form">The form.</param>
+        /// <param name="name">The new name.</param>
+        /// <returns><paramref name="form"/> - which may be used for method chaining.</returns>
+        [return: NotNullIfNotNull("form")]
+        public static T? SetName<T>(this T? form, string? name) where T : Form {
+            if (form != null) form.Name = name;
+            return form;
+        }
+
+        /// <summary>
         /// Sets the title of <paramref name="form"/>.
         /// </summary>
         /// <typeparam name="T">The type of the form.</typeparam>
