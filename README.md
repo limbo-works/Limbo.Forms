@@ -3,13 +3,14 @@
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/limbo-works/Limbo.Forms/blob/v1/main/LICENSE.md)
 [![NuGet](https://img.shields.io/nuget/vpre/Limbo.Forms.svg)](https://www.nuget.org/packages/Limbo.Forms)
 [![NuGet](https://img.shields.io/nuget/dt/Limbo.Forms.svg)](https://www.nuget.org/packages/Limbo.Forms)
+[![Limbo.Forms at packages.limbo.works](https://img.shields.io/badge/limbo-packages-blue)](https://packages.limbo.works/limbo.forms/)
 
 **Limbo.Forms** is a .NET package with various models for describing forms and form fields in a web based context.
 
 <table>
   <tr>
     <td><strong>License:</strong></td>
-    <td><a href="./LICENSE.md"><strong>MIT License</strong></a></td>
+    <td><a href="https://github.com/limbo-works/Limbo.Forms/blob/v1/main/LICENSE.md"><strong>MIT License</strong></a></td>
   </tr>
   <tr>
     <td><strong>Target Framework:</strong></td>
@@ -55,4 +56,4 @@ Install-Package Limbo.Forms
 
 ## Documentation
 
-- [See the documentation at **packages.skybrud.dk**](https://packages.skybrud.dk/skybrud.forms/docs/)
+- [See the documentation at **packages.limbo.works**](https://packages.limbo.works/limbo.forms/docs/)
