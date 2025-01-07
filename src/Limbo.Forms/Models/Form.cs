@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
+using System.Linq;
 using Limbo.Forms.Models.Fields;
 using Newtonsoft.Json;
 
@@ -121,6 +123,64 @@ public class Form {
     /// <returns><see langword="true"/> if the <see cref="Labels"/> property should be serialized, otherwise, <see langword="false"/>.</returns>
     public bool ShouldSerializeLabels() {
         return Labels is { Count: > 0 };
+    }
+
+    /// <summary>
+    /// Attempts to get the field with the specified <paramref name="name"/>.
+    /// </summary>
+    /// <param name="name">The name of the field.</param>
+    /// <param name="result">When this method returns, holds the matched <see cref="FieldBase"/> if successful; otherwise, <see langword="null"/>.</param>
+    /// <returns><see langword="true"/> if a matching field is found; otherwise, <see langword="false"/>.</returns>
+    public bool TryGetField(string name, [NotNullWhen(true)] out FieldBase? result) {
+        result = Fields.FirstOrDefault(x => x.Name == name);
+        return result is not null;
+    }
+
+    /// <summary>
+    /// Attempts to get the field with the specified <paramref name="name"/>.
+    /// </summary>
+    /// <typeparam name="TField">The field of the field.</typeparam>
+    /// <param name="name">The name of the field.</param>
+    /// <param name="result">When this method returns, holds the matched <see cref="FieldBase"/> if successful; otherwise, <see langword="null"/>.</param>
+    /// <returns><see langword="true"/> if a matching field is found; otherwise, <see langword="false"/>.</returns>
+    public bool TryGetField<TField>(string name, [NotNullWhen(true)] out TField? result) where TField : FieldBase {
+        result = Fields.FirstOrDefault(x => x.Name == name) as TField;
+        return result is not null;
+    }
+
+    /// <summary>
+    /// Attempts to get the first field matching the specified <paramref name="predicate"/>.
+    /// </summary>
+    /// <param name="predicate">The predicate for matching the field.</param>
+    /// <param name="result">When this method returns, holds the matched <see cref="FieldBase"/> if successful; otherwise, <see langword="null"/>.</param>
+    /// <returns><see langword="true"/> if a matching field is found; otherwise, <see langword="false"/>.</returns>
+    public bool TryGetField(Func<FieldBase, bool> predicate, [NotNullWhen(true)] out FieldBase? result) {
+        result = Fields.FirstOrDefault(predicate);
+        return result is not null;
+    }
+
+    /// <summary>
+    /// Attempts to get the first field matching the specified <paramref name="predicate"/>.
+    /// </summary>
+    /// <typeparam name="TField">The field of the field.</typeparam>
+    /// <param name="predicate">The predicate for matching the field.</param>
+    /// <param name="result">When this method returns, holds the matched <see cref="FieldBase"/> if successful; otherwise, <see langword="null"/>.</param>
+    /// <returns><see langword="true"/> if a matching field is found; otherwise, <see langword="false"/>.</returns>
+    public bool TryGetField<TField>(Func<FieldBase, bool> predicate, [NotNullWhen(true)] out TField? result) where TField : FieldBase {
+        result = Fields.FirstOrDefault(predicate) as TField;
+        return result is not null;
+    }
+
+    /// <summary>
+    /// Attempts to get the first field matching the specified <paramref name="predicate"/>.
+    /// </summary>
+    /// <typeparam name="TField">The field of the field.</typeparam>
+    /// <param name="predicate">The predicate for matching the field.</param>
+    /// <param name="result">When this method returns, holds the matched <see cref="FieldBase"/> if successful; otherwise, <see langword="null"/>.</param>
+    /// <returns><see langword="true"/> if a matching field is found; otherwise, <see langword="false"/>.</returns>
+    public bool TryGetField<TField>(Func<TField, bool> predicate, [NotNullWhen(true)] out TField? result) where TField : FieldBase {
+        result = Fields.OfType<TField>().FirstOrDefault(predicate);
+        return result is not null;
     }
 
     #endregion
