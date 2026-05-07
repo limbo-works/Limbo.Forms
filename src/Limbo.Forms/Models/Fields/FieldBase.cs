@@ -55,6 +55,13 @@ public abstract class FieldBase {
     public bool IsRequired { get; set; }
 
     /// <summary>
+    /// Gets or sets whether the field is readonly.
+    /// </summary>
+    /// <remarks>If set to <see langword="false"/>, this property will be omitted when serializing the field to JSON.</remarks>
+    [JsonProperty("readonly", Order = -260, DefaultValueHandling = DefaultValueHandling.Ignore)]
+    public bool IsReadOnly { get; set; }
+
+    /// <summary>
     /// Gets or sets whether the field is disabled.
     /// </summary>
     /// <remarks>If set to <see langword="false"/>, this property will be omitted when serializing the field to JSON.</remarks>
